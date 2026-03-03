@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ATVxray</string>
+    <string name="import_txt">IMPORT TXT</string>
+    <string name="connect_switch">CONNECT VPN</string>
+    <string name="status_connected">CONNECTED</string>
+    <string name="status_disconnected">DISCONNECTED</string>
+    <string name="status_no_config">NO CONFIG</string>
+    <string name="import_success">VLESS config imported</string>
+    <string name="import_failed">Failed to import TXT</string>
+    <string name="need_config">Import VLESS config first</string>
+    <string name="vpn_permission_denied">VPN permission denied</string>
+</resources>

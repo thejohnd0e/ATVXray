@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    android:background="#101214">
+
+    <TextView
+        android:id="@+id/statusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VPN STATUS"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#8FA1B3"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_disconnected"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#FF5A5A"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#FFC77A"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/importButton"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:text="@string/import_txt"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/connectSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/connect_switch"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:thumbTint="#22C55E"
+        android:trackTint="#334155"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</LinearLayout>
