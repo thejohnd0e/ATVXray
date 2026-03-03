@@ -45,3 +45,11 @@ _build_*/
 _tmp_*/
 _inspect_aar/
 Xray-core-libXray/
+
+# Temporary build folders (Cursor/Gradle/Android)
+_build_libxray/
+_inspect_aar/
+_tmp_*/
+_tmp_tun2socks/
+Xray-core-libXray/
+
