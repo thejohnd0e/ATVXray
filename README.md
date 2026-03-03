@@ -19,7 +19,7 @@ Ultra-minimal Android TV VPN client based on `Xray-core` via `libXray`.
    - `app/libs/libXray.aar`
 3. `tun2socks` is embedded via JNI (prebuilt static library), no external binary is required.
 
-## Build
+## Build.
 ```powershell
 .\gradlew.bat assembleDebug
 ```
