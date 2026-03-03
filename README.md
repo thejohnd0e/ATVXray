@@ -1,4 +1,4 @@
-# ATVxray (Minimal Android TV VLESS Client)
+# ATvXray (Minimal Android TV VLESS Client)
 
 Ultra-minimal Android TV VPN client based on `Xray-core` via `libXray`.
 
