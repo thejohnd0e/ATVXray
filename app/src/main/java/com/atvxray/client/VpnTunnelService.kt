@@ -5,6 +5,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.Service
 import android.content.Intent
+import android.content.Context
 import android.net.VpnService
 import android.os.Build
 import android.os.IBinder
@@ -132,8 +133,7 @@ class VpnTunnelService : VpnService() {
                 "ATVxray VPN",
                 NotificationManager.IMPORTANCE_LOW
             )
-            val manager = getSystemService(NotificationManager::class.java)
-            manager.createNotificationChannel(channel)
+            notificationManager()?.createNotificationChannel(channel)
         }
 
         return NotificationCompat.Builder(this, channelId)
@@ -145,7 +145,11 @@ class VpnTunnelService : VpnService() {
     }
 
     private fun updateNotification(status: String) {
-        val manager = getSystemService(NotificationManager::class.java)
-        manager.notify(1, buildNotification(status))
+        notificationManager()?.notify(1, buildNotification(status))
+    }
+
+    private fun notificationManager(): NotificationManager? {
+        @Suppress("DEPRECATION")
+        return getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager
     }
 }
